@@ -375,6 +375,9 @@
     (defun my-haskell-mode-hook ()
       (auto-complete-mode 1)
       (whitespace-mode 1)
+      (turn-on-haskell-doc-mode)
+      (turn-on-haskell-indentation)
+      (enable-paredit-mode)
 
       (require 'align)
       (add-to-list 'align-rules-list
